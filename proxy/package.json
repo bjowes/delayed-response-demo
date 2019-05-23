@@ -1,0 +1,18 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "ntlm-proxy": "ntlm-proxy &",
+    "cypress-ntlm": "npm run ntlm-proxy && (cypress-ntlm open ; ntlm-proxy-exit)"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^3.3.1",
+    "cypress-ntlm-auth": "^1.0.1"
+  }
+}
